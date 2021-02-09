@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+}
+
+.logo {
+  font-family: "shrikand", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  position: relative;
+}
+
+.menu__card--title {
+  font-size: 20px;
+}
+
+.menu__card--description {
+  color: gray;
+  font-size: 18px;
+}
+
+.menu__card--price {
+  font-weight: 900;
+  color: #404040;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .header__logo {
+  text-align: center;
+  padding: 1em 0;
+}
+header .header__logo img {
+  width: 50%;
+  max-width: 350px;
+}
+header .position {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #EAEAEA;
+  font-weight: 600;
+  color: #353535;
+}
+header .position p {
+  padding-left: 2em;
+}
+header .nav {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 1% 2.5% 3% 2.5%;
+}
+
+.menu__pages {
+  background-color: #FFF;
+}
+.menu__pages nav {
+  padding: 1em 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__pages nav a {
+  margin: auto 0;
+  font-size: 2rem;
+}
+.menu__pages nav img {
+  width: 75%;
+  max-width: 350px;
+}
+.menu__pages nav .invis__menu {
+  color: #FFF;
+  font-size: 5%;
+}
+.menu__pages .rest__pic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+footer {
+  padding: 1em 5%;
+  background-color: #353535;
+  color: #FFF;
+}
+footer .logo {
+  margin-bottom: 2vh;
+  font-size: 1.5em;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+footer .fa-utensils {
+  padding-right: 16px;
+}
+footer .fa-hands-helping {
+  padding-right: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

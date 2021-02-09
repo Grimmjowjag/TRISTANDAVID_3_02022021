@@ -1,21 +1,19 @@
 {
-  "name": "writing-sass",
+  "name": "tristandavid_3_02022021",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "git+https://github.com/Grimmjowjag/TRISTANDAVID_3_02022021.git"
   },
-  "author": "gerkx",
+  "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
-    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    "url": "https://github.com/Grimmjowjag/TRISTANDAVID_3_02022021/issues"
   },
-  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+  "homepage": "https://github.com/Grimmjowjag/TRISTANDAVID_3_02022021#readme"
 }

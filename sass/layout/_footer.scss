@@ -1,0 +1,25 @@
+//  *FOOTER*
+
+footer{
+    padding: 1em 5%;
+    background-color: #353535;
+    color: #FFF;
+    .logo{
+        margin-bottom: 2vh;
+        font-size: 1.5em;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .fa-utensils{
+        padding-right: 16px;
+    }
+    .fa-hands-helping{
+        padding-right: 8px;
+    }
+}
