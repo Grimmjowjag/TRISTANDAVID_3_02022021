@@ -1,0 +1,54 @@
+section.menu{
+    margin: 2em 5%;
+    .running__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .stage{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .btn__pick{
+        background-color: $color-primary;
+        border-radius: 100%;
+        padding: 2px 7px;
+        position: absolute;
+        color: #FFF;
+        top: 1.6em;
+        left: -10px;
+    }
+    .menu__button{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: 1.3em;
+        background-color: $bckgrd-clr-gray;
+        border: none;
+        border-radius: 20px;
+        @include box-shadow($bckgrd-clr-dgray);
+        font-size: 18px;
+        .fas{
+            color: #7E7E7E;
+        }
+        .invis .fas{
+            color: $bckgrd-clr-gray;
+        }
+        &:hover{
+            @include box-shadow-hover($bckgrd-clr-dgray);
+            background-color: lighten($color-primary, 35%);
+            & .fas{
+                color: $color-primary;
+            }
+            & .invis .fas{
+                color: lighten($color-primary, 35%);
+            }
+        }
+    }
+}

@@ -129,4 +129,59 @@ footer .fa-hands-helping {
   padding-right: 8px;
 }
 
+section.menu {
+  margin: 2em 5%;
+}
+section.menu .running__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.menu .stage {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+}
+section.menu .btn__pick {
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 2px 7px;
+  position: absolute;
+  color: #FFF;
+  top: 1.6em;
+  left: -10px;
+}
+section.menu .menu__button {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 1.3em;
+  background-color: #F6F6F6;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #EAEAEA;
+  font-size: 18px;
+}
+section.menu .menu__button .fas {
+  color: #7E7E7E;
+}
+section.menu .menu__button .invis .fas {
+  color: #F6F6F6;
+}
+section.menu .menu__button:hover {
+  box-shadow: 0 12px 10px #EAEAEA;
+  background-color: #f2eafb;
+}
+section.menu .menu__button:hover .fas {
+  color: #9356DC;
+}
+section.menu .menu__button:hover .invis .fas {
+  color: #f2eafb;
+}
+
 /*# sourceMappingURL=style.css.map */
