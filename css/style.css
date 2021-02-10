@@ -53,9 +53,11 @@ h4 {
 .nav__btn {
   color: #fff;
   padding: 0.8em 2em;
+  margin-top: 2em;
+  margin-bottom: 3em;
   border-radius: 45px;
   border: hidden;
-  font-size: 18px;
+  font-size: 17px;
   width: 75%;
   max-width: 450px;
   cursor: pointer;
@@ -168,7 +170,7 @@ section.menu .btn__pick {
   padding: 2px 7px;
   position: absolute;
   color: #FFF;
-  top: 1.6em;
+  top: 1.3em;
   left: -10px;
 }
 section.menu .menu__button {
