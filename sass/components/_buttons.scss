@@ -1,0 +1,18 @@
+// *Boutons explorer + commande*
+
+.nav__btn{
+    color: #fff;
+    padding: 0.8em 2em;
+    border-radius: 45px;
+    border: hidden;
+    font-size: 18px;
+    width: 75%;
+    max-width: 450px;
+    cursor: pointer;
+    @include box-shadow(#C5C5C5);
+    background-image: linear-gradient($color-secondary, $color-primary);   
+    &:hover{
+        background-image: linear-gradient($lighten-color-secondary, $lighten-color-primary);
+        @include box-shadow-hover(#C5C5C5);
+    }
+}

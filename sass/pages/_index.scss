@@ -13,6 +13,7 @@ section.menu{
         width: 100%;
         margin-bottom: 1em;
     }
+
     .btn__pick{
         background-color: $color-primary;
         border-radius: 100%;
@@ -49,6 +50,43 @@ section.menu{
             & .invis .fas{
                 color: lighten($color-primary, 35%);
             }
+        }
+    }
+}
+
+.restaurants{
+    padding: 2em 5%;
+    background-color: $bckgrd-clr-gray;
+    .restaurants__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card{
+        width: 100%;
+        margin: 0.5em 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        position: relative;
+        @include box-shadow(#E5E5E5);
+        &__img{
+            border-radius: 25px 25px 0 0;
+            object-fit: cover;
+            object-position: center;
+            height: 200px;
+        }
+        &__banner{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        &__txt{
+            margin: 0 0 1em 1em;
+        }
+        &:hover{
+            @include box-shadow-hover(#E5E5E5);
         }
     }
 }
