@@ -7,6 +7,8 @@ header{
     .header__logo{
         text-align: center;
         padding: 1em 0;
+        @include box-shadow(#d2d2d2);    
+        position: relative;
         img{
             width: 50%;
             max-width: 350px;
@@ -20,7 +22,7 @@ header{
         font-weight: 600;
         color: #353535;
         p{
-            padding-left: 2em;
+            padding-left: 1em;
         }
     }
     .nav{

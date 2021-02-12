@@ -17,10 +17,10 @@ body {
 }
 
 .logo {
-  font-family: "shrikand", "sans-serif";
+  font-family: "shrikhand", "sans-serif";
 }
 
-.menu__body .cartes__section .title h1 {
+.menu__body .page__section .title h1 {
   font-family: "Shrikhand";
   font-size: 30px;
 }
@@ -94,6 +94,8 @@ header {
 header .header__logo {
   text-align: center;
   padding: 1em 0;
+  box-shadow: 0 5px 5px #d2d2d2;
+  position: relative;
 }
 header .header__logo img {
   width: 50%;
@@ -108,7 +110,7 @@ header .position {
   color: #353535;
 }
 header .position p {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 header .nav {
   text-align: center;
@@ -154,6 +156,9 @@ footer .logo {
 footer ul {
   list-style: none;
   padding: 0;
+}
+footer li {
+  padding: 8px;
 }
 footer a {
   text-decoration: none;
@@ -260,16 +265,26 @@ section.menu .menu__button:hover .invis .fas {
 .menu__body {
   background-color: #F6F6F6;
 }
-.menu__body .cartes__section {
+.menu__body .page__section {
   padding: 2em 5%;
   position: relative;
   top: -50px;
   border-radius: 25px 25px 0 0;
   background-color: #F6F6F6;
 }
-.menu__body .cartes__section .title {
+.menu__body .page__section .title {
   display: flex;
   justify-content: space-between;
+}
+.menu__body .page__section .menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.menu__body .page__section .order__btn {
+  text-align: center;
+  padding-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
