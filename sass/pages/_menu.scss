@@ -1,0 +1,17 @@
+.menu__body{
+    background-color: $bckgrd-clr-gray;
+    .cartes__section{
+        padding: 2em 5%;
+        position: relative;
+        top: -50px;
+        border-radius: 25px 25px 0 0;
+        background-color: $bckgrd-clr-gray;
+        .title{
+            display: flex;
+            justify-content: space-between;        
+            h1{
+                @extend %restaurant-name;
+            }
+        }
+    }
+}

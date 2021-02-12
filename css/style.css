@@ -20,6 +20,11 @@ body {
   font-family: "shrikand", "sans-serif";
 }
 
+.menu__body .cartes__section .title h1 {
+  font-family: "Shrikhand";
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -67,6 +72,19 @@ h4 {
 .nav__btn:hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0 12px 10px #C5C5C5;
+}
+
+.restaurants .new {
+  padding: 0.5em 1em;
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
 }
 
 header {
@@ -238,6 +256,20 @@ section.menu .menu__button:hover .invis .fas {
 }
 .restaurants .card:hover {
   box-shadow: 0 12px 10px #E5E5E5;
+}
+.menu__body {
+  background-color: #F6F6F6;
+}
+.menu__body .cartes__section {
+  padding: 2em 5%;
+  position: relative;
+  top: -50px;
+  border-radius: 25px 25px 0 0;
+  background-color: #F6F6F6;
+}
+.menu__body .cartes__section .title {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
