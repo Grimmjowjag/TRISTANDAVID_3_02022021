@@ -5,28 +5,17 @@
   height: 0%;
   opacity: 0;
   animation: spinner-vanish 1000ms linear 3000ms 1 normal backwards;
+  display: flex;
   .lds-hourglass {
-    display: flex;
+    margin: auto;
     opacity: 1;
-    position: fixed;
-    transform: scale(1.5);
-    top: 39%;
-    left: 39%;
-  }
-  .lds-hourglass:after {
-    content: " ";
-    display: block;
-    position: fixed;
-    border-radius: 50%;
-    width: 0;
-    height: 0;
+    border-radius: 75%;
     z-index: 10002;
-    margin: 8px;
     box-sizing: border-box;
-    border: 32px solid #fff;
+    border: 50px solid #fff;
     border-color: $color-primary transparent $color-secondary transparent;
     animation: lds-hourglass 1.2s infinite;
-  }
+  } 
 }
 
   @keyframes spinner-vanish{
