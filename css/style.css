@@ -20,7 +20,7 @@ body {
   font-family: "shrikhand", "sans-serif";
 }
 
-.menu__body .page__section .title h1 {
+.menu__body .cartes__section .title h1 {
   font-family: "Shrikhand";
   font-size: 30px;
 }
@@ -55,6 +55,64 @@ h4 {
   color: #404040;
 }
 
+.loading-spinner {
+  position: fixed;
+  z-index: 2;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  animation: spinner-vanish 1000ms linear 3000ms 1 normal backwards;
+}
+.loading-spinner .lds-hourglass {
+  display: flex;
+  opacity: 1;
+  position: fixed;
+  transform: scale(1.5);
+  top: 39%;
+  left: 39%;
+}
+.loading-spinner .lds-hourglass:after {
+  content: " ";
+  display: block;
+  position: fixed;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  z-index: 10002;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #9356DC transparent #FF79DA transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes spinner-vanish {
+  0% {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+  }
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
 .nav__btn {
   color: #fff;
   padding: 0.8em 2em;
@@ -383,24 +441,86 @@ section.menu .menu__button:hover .invis .fas {
 .menu__body {
   background-color: #F6F6F6;
 }
-.menu__body .page__section {
+.menu__body .cartes__section {
   padding: 2em 5%;
   position: relative;
   top: -50px;
   border-radius: 25px 25px 0 0;
   background-color: #F6F6F6;
 }
-.menu__body .page__section .title {
+.menu__body .cartes__section .title {
   display: flex;
   justify-content: space-between;
 }
-.menu__body .page__section .menus {
+.menu__body .cartes__section .menus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
 }
-.menu__body .page__section .order__btn {
+@media (min-width: 1025px) {
+  .menu__body .cartes__section .menus {
+    justify-content: space-between;
+  }
+}
+.menu__body .cartes__section .menus__menu {
+  width: 100%;
+}
+@media (min-width: 641px) {
+  .menu__body .cartes__section .menus__menu {
+    width: 75%;
+  }
+}
+@media (min-width: 1025px) {
+  .menu__body .cartes__section .menus__menu {
+    width: 32%;
+  }
+}
+.menu__body .cartes__section .menus__menu h4::before {
+  content: "";
+  position: absolute;
+  background-color: #99E2D0;
+  width: 35px;
+  height: 3px;
+  bottom: -5px;
+}
+.menu__body .cartes__section .menus__menu .menu__card {
+  opacity: 0;
+  background-color: white;
+  margin: 1em 0;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "title ." "description price";
+  grid-template-columns: auto min-content min-content;
+  grid-gap: 1em;
+  overflow: hidden;
+  box-shadow: 0 5px 5px #E8E8E8;
+  cursor: pointer;
+}
+.menu__body .cartes__section .menus__menu .menu__card .menu__card--title {
+  grid-area: title;
+  padding-top: 1em;
+  padding-left: 1em;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__body .cartes__section .menus__menu .menu__card .menu__card--description {
+  grid-area: description;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__body .cartes__section .menus__menu .menu__card .menu__card--price {
+  grid-area: price;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  justify-self: end;
+}
+.menu__body .cartes__section .order__btn {
   text-align: center;
   padding-top: 2em;
 }
