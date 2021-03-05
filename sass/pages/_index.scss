@@ -4,6 +4,12 @@ section.menu{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include tablet{
+            justify-content: center;
+        }
+        @include desktop{
+            justify-content: space-between;
+        }
     }
     .stage{
         display: flex;
@@ -12,6 +18,15 @@ section.menu{
         position: relative;
         width: 100%;
         margin-bottom: 1em;
+        @include tablet{
+            width: 80%;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+        @include desktop{
+            width: 32%;
+        
+        }
     }
 
     .btn__pick{
@@ -71,6 +86,12 @@ section.menu{
         border-radius: 25px;
         position: relative;
         @include box-shadow(#E5E5E5);
+        @include tablet{
+            width: 49%;
+        }
+        @include desktop{
+            width: 24%;
+        }
         &__img{
             border-radius: 25px 25px 0 0;
             object-fit: cover;

@@ -308,6 +308,11 @@ header .nav {
   height: 250px;
   object-fit: cover;
 }
+@media (min-width: 1025px) {
+  .menu__pages .rest__pic {
+    height: 320px;
+  }
+}
 
 footer {
   padding: 1em 5%;
@@ -335,6 +340,13 @@ footer .fa-utensils {
 footer .fa-hands-helping {
   padding-right: 8px;
 }
+@media (min-width: 641px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+  }
+}
 
 section.menu {
   margin: 2em 5%;
@@ -344,6 +356,16 @@ section.menu .running__card {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (min-width: 641px) {
+  section.menu .running__card {
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  section.menu .running__card {
+    justify-content: space-between;
+  }
+}
 section.menu .stage {
   display: flex;
   justify-content: space-between;
@@ -351,6 +373,18 @@ section.menu .stage {
   position: relative;
   width: 100%;
   margin-bottom: 1em;
+}
+@media (min-width: 641px) {
+  section.menu .stage {
+    width: 80%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+@media (min-width: 1025px) {
+  section.menu .stage {
+    width: 32%;
+  }
 }
 section.menu .btn__pick {
   background-color: #9356DC;
@@ -409,6 +443,16 @@ section.menu .menu__button:hover .invis .fas {
   border-radius: 25px;
   position: relative;
   box-shadow: 0 5px 5px #E5E5E5;
+}
+@media (min-width: 641px) {
+  .restaurants .card {
+    width: 49%;
+  }
+}
+@media (min-width: 1025px) {
+  .restaurants .card {
+    width: 24%;
+  }
 }
 .restaurants .card__img {
   border-radius: 25px 25px 0 0;

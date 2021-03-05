@@ -25,4 +25,11 @@ footer{
     .fa-hands-helping{
         padding-right: 8px;
     }
+    @include tablet{
+        ul{
+            display:flex;
+            justify-content: space-between;
+            padding-bottom: 1em;
+        }
+    }
 }
